@@ -1,10 +1,16 @@
 import Card from '@/components/Card'
 
 export const metadata = {
-  title: 'Projects & Case Studies',
-  description: 'Explore business consulting projects and case studies by Hussein Ali Yassine, showcasing strategic initiatives, operational improvements, and business transformations across various industries.',
+  title: 'Business Consulting Projects & Marketing Case Studies | Mike Yassine - Hussein Ali Yassine',
+  description: 'Explore business consulting projects and marketing case studies by Mike Yassine (Hussein Ali Yassine). With 12+ years in Beirut Lebanon, former Marketing Director at Spirit Advertising delivering strategic business management solutions, operational excellence, and digital transformation across industries.',
+  keywords: 'Mike Yassine, Hussein Yassine, Hussein Ali Yassine, business consultant Beirut, marketing director Lebanon, Spirit Advertising, business management consultant, strategic planning Lebanon, operational excellence, digital transformation, business development Beirut, marketing strategy Lebanon, consulting services Middle East',
   alternates: {
     canonical: 'https://husseinali-yassine.com/projects'
+  },
+  openGraph: {
+    title: 'Business Consulting Projects | Mike Yassine - Hussein Ali Yassine',
+    description: 'Strategic business consulting and marketing expertise from Beirut, Lebanon. 12+ years experience in business management and marketing leadership.',
+    type: 'website',
   }
 }
 
@@ -12,52 +18,56 @@ export default function Projects() {
   const projects = [
     {
       id: 1,
-      title: 'SaaS Company Growth Strategy',
-      category: 'Business Development',
-      description: 'Developed comprehensive go-to-market strategy for B2B SaaS startup, resulting in 300% revenue growth over 18 months through strategic partnerships and optimized sales processes.',
-      image: '/projects/saas-growth.jpg',
-      link: '#'
+      title: 'Regional Marketing Campaign Strategy - Lebanon & Middle East',
+      category: 'Marketing Strategy & Business Development',
+      description: 'Developed comprehensive integrated marketing campaign for leading Lebanese brand, leveraging Spirit Advertising expertise to increase market share by 45% across Beirut and regional markets through strategic positioning and multi-channel execution.',
+      image: "/images/projects/regional-marketing-campaign-lebanon.png",
+      link: '/projects/regional-marketing-campaign-lebanon'
     },
     {
       id: 2,
-      title: 'Manufacturing Operations Optimization',
-      category: 'Operational Excellence',
-      description: 'Led operational transformation initiative that reduced production costs by 25% while improving quality metrics and on-time delivery performance for mid-sized manufacturer.',
-      image: '/projects/manufacturing.jpg',
-      link: '#'
+      title: 'Business Management Transformation - Service Industry',
+      category: 'Business Management & Operational Excellence',
+      description: 'Led complete business management restructuring for mid-sized service company in Beirut, implementing new operational frameworks that reduced costs by 28% while improving service delivery and customer satisfaction metrics.',
+      image: "/images/projects/business-management-transformation.png",
+      link: '/projects/business-management-transformation'
     },
     {
       id: 3,
-      title: 'Retail Chain Expansion Strategy',
-      category: 'Strategic Planning',
-      description: 'Designed and executed market expansion strategy for regional retail chain, identifying optimal locations and operational model for new market entry across three states.',
-      image: '/projects/retail-expansion.jpg',
-      link: '#'
+      title: 'Digital Marketing & Brand Development Initiative',
+      category: 'Digital Strategy & Brand Management',
+      description: 'Designed and executed comprehensive digital marketing strategy for retail brand expansion, utilizing advertising industry best practices from Spirit Advertising experience to achieve 320% increase in online engagement and 180% revenue growth.',
+      image: "/images/projects/digital-marketing-brand-development.png",
+      link: '/projects/digital-marketing-brand-development'
     },
+
     {
       id: 4,
-      title: 'Digital Transformation Roadmap',
-      category: 'Technology Strategy',
-      description: 'Created comprehensive digital transformation roadmap for traditional services company, prioritizing initiatives and establishing governance structure for successful technology adoption.',
-      image: '/projects/digital-transform.jpg',
-      link: '#'
+      title: 'Competitive Advantage & Market Entry Strategy – GCC Expansion',
+      category: 'Business Strategy & Market Expansion',
+      description: 'Defined unique value proposition leveraging Lebanese heritage as a premium differentiator while aligning with GCC consumer preferences and pricing expectations.',
+      image: "/images/projects/gcc-market-entry-strategy.png",
+      link: '/projects/gcc-market-entry-strategy'
     },
     {
       id: 5,
-      title: 'M&A Integration Planning',
-      category: 'Strategic Planning',
-      description: 'Guided post-merger integration for two complementary businesses, establishing unified operating model and achieving projected synergies within first year.',
-      image: '/projects/merger.jpg',
-      link: '#'
+      title: 'Post-Crisis Brand Revitalization – Navigating Lebanon’s Economic Collapse',
+      category: 'Brand Strategy & Crisis Management',
+      description: 'Mapped economic, operational, and perceptual impacts on brand health, pricing power, and customer loyalty.',
+      image: "/images/projects/post-crisis-brand-revitalization.png",
+      link: '/projects/post-crisis-brand-revitalization'
     },
     {
       id: 6,
-      title: 'Customer Experience Enhancement',
-      category: 'Business Development',
-      description: 'Redesigned customer journey and service delivery model, improving NPS scores by 40 points and reducing churn rate by 35% for subscription-based business.',
-      image: '/projects/customer-experience.jpg',
-      link: '#'
-    }
+      title: '"B2B Sales Enablement & Revenue Growth Framework',
+      category: 'Sales Strategy & Revenue Operations',
+      description: 'Built standardized yet flexible sales playbook with stages mapped to MENA procurement cycles and relationship dynamics.',
+      image: "/images/projects/b2b-sales-enablement-framework.png",
+      link: '/projects/b2b-sales-enablement-framework'
+    },
+    
+    
+    
   ]
 
   return (
@@ -66,11 +76,13 @@ export default function Projects() {
       <section className="pt-24 pb-12 px-4 bg-gradient-to-br from-blue-50 to-white">
         <div className="max-w-6xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Projects & Case Studies
+            Business Consulting Projects & Marketing Case Studies
           </h1>
-          <p className="text-xl text-gray-700 max-w-3xl">
-            Hussein Ali Yassine has partnered with organizations across industries to deliver 
-            measurable business results through strategic consulting and operational excellence.
+          <p className="text-xl text-gray-700 max-w-3xl mb-4">
+            <strong>Mike Yassine (Hussein Ali Yassine)</strong>, Business Management Consultant and former Marketing Director at Spirit Advertising in Beirut, Lebanon, brings over 12 years of proven expertise in strategic business consulting, marketing leadership, and operational excellence.
+          </p>
+          <p className="text-lg text-gray-600 max-w-3xl">
+            Based in Beirut with extensive Middle East market knowledge, Hussein Yassine has partnered with organizations across industries to deliver measurable business results through strategic planning, marketing innovation, and business transformation.
           </p>
         </div>
       </section>
@@ -78,6 +90,12 @@ export default function Projects() {
       {/* Projects Grid */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
+          <h2 className="text-3xl font-bold mb-8 text-gray-900">
+            Featured Projects & Case Studies
+          </h2>
+          <p className="text-lg text-gray-600 mb-12 max-w-3xl">
+            Explore how Mike Yassine has helped businesses in Lebanon and across the Middle East achieve growth through strategic consulting, marketing excellence, and business management expertise.
+          </p>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {projects.map((project) => (
               <Card
@@ -93,107 +111,165 @@ export default function Projects() {
         </div>
       </section>
 
-      {/* Capabilities Section */}
+      {/* Expertise Section */}
       <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
-          <h2 className="text-3xl font-bold mb-12 text-center text-gray-900">
-            Consulting Capabilities
+          <h2 className="text-3xl font-bold mb-4 text-center text-gray-900">
+            Business Consulting & Marketing Expertise
           </h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            Hussein Ali Yassine combines business management acumen with marketing leadership experience from Spirit Advertising to deliver comprehensive consulting solutions
+          </p>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Strategic Planning</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Strategic Business Planning & Management</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Market analysis and competitive positioning
+                  Market analysis and competitive positioning for Lebanon and Middle East markets
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Long-term vision development
+                  Long-term business vision development and strategic roadmap creation
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Strategic roadmap creation
+                  Business model optimization and growth strategy consulting
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Regional expansion planning and market entry strategies
                 </li>
               </ul>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Business Development</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Marketing Strategy & Brand Development</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Revenue growth strategies
+                  Integrated marketing campaign development and execution
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Partnership development
+                  Brand positioning and marketing communications strategy
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Market expansion planning
+                  Digital marketing and advertising campaign management
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Marketing team leadership and capability development
                 </li>
               </ul>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Operational Excellence</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Operational Excellence & Performance</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Process optimization
+                  Business process optimization and efficiency improvement
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Cost reduction initiatives
+                  Cost reduction strategies and operational cost management
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Performance improvement
+                  Performance metrics development and KPI management
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Quality management and service excellence programs
                 </li>
               </ul>
             </div>
 
             <div className="bg-white p-8 rounded-lg shadow-sm">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Organizational Transformation</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Business Development & Growth</h3>
               <ul className="space-y-3 text-gray-700">
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Change management
+                  Revenue growth strategies and sales optimization
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Cultural alignment
+                  Strategic partnership development and alliance management
                 </li>
                 <li className="flex items-start">
                   <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                   </svg>
-                  Leadership development
+                  Customer acquisition and retention strategy development
+                </li>
+                <li className="flex items-start">
+                  <svg className="w-5 h-5 text-blue-600 mr-2 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                    <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+                  </svg>
+                  Market opportunity identification and business case development
                 </li>
               </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Experience Highlight */}
+      <section className="py-16 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl p-8 md:p-12">
+            <h2 className="text-3xl font-bold mb-6 text-gray-900">
+              12+ Years of Business Management & Marketing Excellence
+            </h2>
+            <p className="text-lg text-gray-700 mb-4">
+              <strong>Hussein Yassine</strong> has spent over 12 years in Beirut, Lebanon, building deep expertise in business management and marketing strategy. As Marketing Director at Spirit Advertising, Mike Yassine developed and executed comprehensive marketing campaigns, led cross-functional teams, and delivered exceptional results for diverse clients across the Middle East region.
+            </p>
+            <p className="text-lg text-gray-700 mb-6">
+              This extensive experience in both advertising agency leadership and business consulting enables Hussein Ali Yassine to provide unique insights that bridge creative marketing excellence with strategic business management, delivering holistic solutions that drive sustainable growth.
+            </p>
+            <div className="grid md:grid-cols-3 gap-6 mt-8">
+              <div className="text-center">
+                <div className="text-4xl font-bold text-blue-600 mb-2">12+</div>
+                <div className="text-gray-700">Years Experience in Beirut</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-blue-600 mb-2">50+</div>
+                <div className="text-gray-700">Successful Projects Delivered</div>
+              </div>
+              <div className="text-center">
+                <div className="text-4xl font-bold text-blue-600 mb-2">100%</div>
+                <div className="text-gray-700">Client Satisfaction Focus</div>
+              </div>
             </div>
           </div>
         </div>
@@ -203,16 +279,16 @@ export default function Projects() {
       <section className="py-16 px-4 bg-blue-600 text-white">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">
-            Ready to Start Your Project?
+            Ready to Transform Your Business?
           </h2>
           <p className="text-xl mb-8 text-blue-100">
-            Discuss how Hussein Ali Yassine can help your organization achieve its objectives
+            Contact Mike Yassine (Hussein Ali Yassine) to discuss how strategic business consulting and marketing expertise can help your organization achieve its goals in Lebanon and beyond
           </p>
           <a 
             href="/contact"
             className="inline-block bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-colors"
           >
-            Contact Today
+            Schedule a Consultation
           </a>
         </div>
       </section>

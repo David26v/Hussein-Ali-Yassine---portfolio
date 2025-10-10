@@ -11,19 +11,22 @@ const inter = Inter({
 export const metadata = {
   metadataBase: new URL('https://husseinali-yassine.com'), 
   title: {
-    default: 'Hussein Ali Yassine | Business Consultant & Entrepreneur',
+    default: 'Hussein Ali Yassine | Business Management Consultant & Marketing Strategist',
     template: '%s | Hussein Ali Yassine'
   },
-  description: 'Hussein Ali Yassine - Business consultant, entrepreneur, and strategic advisor specializing in business development, operational excellence, and growth strategies.',
+  description: 'Hussein Ali Yassine - Business management consultant and marketing strategist with 12+ years of experience in Lebanon and the MENA region. Specializing in business strategy, brand development, and organizational growth.',
   keywords: [
     'Hussein Ali Yassine',
-    'Hussein Yassine', 
-    'business consultant',
-    'entrepreneur',
-    'business development',
-    'strategic consulting',
-    'business advisor',
-    'operational excellence'
+    'Hussein Yassine',
+    'Mike Yassine',
+    'business management consultant',
+    'marketing strategist Lebanon',
+    'business consultant Beirut',
+    'MENA business advisor',
+    'Spirit Advertising',
+    'brand strategy consultant',
+    'business development Lebanon',
+    'marketing director',
   ],
   authors: [{ name: 'Hussein Ali Yassine' }],
   creator: 'Hussein Ali Yassine',
@@ -37,22 +40,22 @@ export const metadata = {
     type: 'website',
     locale: 'en_US',
     url: 'https://husseinali-yassine.com',
-    title: 'Hussein Ali Yassine | Business Consultant & Entrepreneur',
-    description: 'Business consultant, entrepreneur, and strategic advisor specializing in business development and growth strategies.',
+    title: 'Hussein Ali Yassine | Business Management Consultant & Marketing Strategist',
+    description: 'Business management consultant with 12+ years of experience helping organizations in Lebanon and the MENA region achieve strategic clarity and sustainable growth.',
     siteName: 'Hussein Ali Yassine',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/collaborative-approach.png',
         width: 1200,
         height: 630,
-        alt: 'Hussein Ali Yassine - Business Consultant'
+        alt: 'Hussein Ali Yassine - Business Management Consultant'
       }
     ]
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Hussein Ali Yassine | Business Consultant & Entrepreneur',
-    description: 'Business consultant, entrepreneur, and strategic advisor',
+    title: 'Hussein Ali Yassine | Business Management Consultant',
+    description: 'Business management consultant and marketing strategist in Lebanon',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -83,21 +86,42 @@ export default function RootLayout({ children }) {
               '@context': 'https://schema.org',
               '@type': 'Person',
               name: 'Hussein Ali Yassine',
-              alternateName: 'Hussein Yassine',
+              alternateName: ['Hussein Yassine', 'Mike Yassine'],
               url: 'https://husseinali-yassine.com',
-              jobTitle: 'Business Consultant & Entrepreneur',
-              description: 'Business consultant and strategic advisor specializing in business development, operational excellence, and growth strategies for emerging companies.',
+              jobTitle: 'Business Management Consultant & Marketing Strategist',
+              description: 'Business management consultant with over 12 years of experience in Lebanon and the MENA region, specializing in business strategy, brand development, and organizational growth.',
+              workLocation: {
+                '@type': 'Place',
+                address: {
+                  '@type': 'PostalAddress',
+                  addressLocality: 'Beirut',
+                  addressCountry: 'Lebanon'
+                }
+              },
               knowsAbout: [
-                'Business Development',
-                'Strategic Planning',
-                'Operational Excellence',
+                'Business Management',
+                'Marketing Strategy',
+                'Brand Development',
                 'Business Consulting',
-                'Entrepreneurship'
+                'Strategic Planning',
+                'MENA Markets',
+                'Organizational Growth'
               ],
+              hasOccupation: {
+                '@type': 'Occupation',
+                name: 'Business Management Consultant',
+                occupationLocation: {
+                  '@type': 'Country',
+                  name: 'Lebanon'
+                }
+              },
+              alumniOf: {
+                '@type': 'Organization',
+                name: 'Spirit Advertising',
+                description: 'Former Marketing Director'
+              },
               sameAs: [
-                'https://www.linkedin.com/in/hussein-ali-yassine',
-                'https://medium.com/@hussein-ali-yassine',
-                'https://twitter.com/hussein_yassine'
+                'https://www.linkedin.com/in/hussein-ali-yassine'
               ]
             })
           }}
@@ -110,13 +134,21 @@ export default function RootLayout({ children }) {
               '@context': 'https://schema.org',
               '@type': 'ProfessionalService',
               name: 'Hussein Ali Yassine Consulting',
-              description: 'Strategic business consulting services',
+              description: 'Business management and marketing strategy consulting services for organizations in Lebanon and the MENA region',
               provider: {
                 '@type': 'Person',
                 name: 'Hussein Ali Yassine'
               },
-              areaServed: 'Worldwide',
-              serviceType: 'Business Consulting'
+              areaServed: {
+                '@type': 'Country',
+                name: 'Lebanon'
+              },
+              serviceType: [
+                'Business Management Consulting',
+                'Marketing Strategy',
+                'Brand Development',
+                'Business Strategy'
+              ]
             })
           }}
         />
