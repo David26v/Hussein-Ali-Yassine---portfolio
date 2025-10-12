@@ -16,17 +16,72 @@ export const metadata = {
   },
   description: 'Hussein Ali Yassine - Business management consultant and marketing strategist with 12+ years of experience in Lebanon and the MENA region. Specializing in business strategy, brand development, and organizational growth.',
   keywords: [
+    // Personal & Brand Identity
     'Hussein Ali Yassine',
-    'Hussein Yassine',
     'Mike Yassine',
-    'business management consultant',
-    'marketing strategist Lebanon',
-    'business consultant Beirut',
-    'MENA business advisor',
-    'Spirit Advertising',
-    'brand strategy consultant',
-    'business development Lebanon',
-    'marketing director',
+    'Mike Yassine Beirut',
+    'Hussein Yassine consultant',
+    'Business consultant Mike Yassine',
+    'Marketing strategist Hussein Ali Yassine',
+    'Beirut business consultant',
+    'Lebanon marketing strategist',
+  
+    // Core Services
+    'Business strategy consultant Lebanon',
+    'Strategic planning consultant Beirut',
+    'Marketing strategy consultant MENA',
+    'Brand development expert Lebanon',
+    'Business transformation consultant',
+    'Operational excellence consultant Middle East',
+    'Business process optimization Beirut',
+    'Cost reduction consultant Lebanon',
+    'Performance improvement advisor',
+    'Digital marketing strategy consultant',
+    'E-commerce strategy Lebanon',
+    'Marketing campaign strategist Beirut',
+    'Go-to-market strategy Lebanon',
+    'Competitive advantage consultant',
+    'Market positioning expert Beirut',
+    'B2B marketing strategist Middle East',
+    'B2C brand consultant Lebanon',
+  
+    // Industry & Regional Focus
+    'MENA business consultant',
+    'GCC market entry consultant',
+    'Lebanon business advisor',
+    'Beirut management consultant',
+    'Middle East brand strategist',
+    'Arab market marketing expert',
+    'Lebanese SME consultant',
+    'Business consultant for startups Lebanon',
+    'Consulting for service businesses Beirut',
+    'Business consultant for family businesses Lebanon',
+  
+    // Former Role & Credibility
+    'Former Spirit Advertising director',
+    'Ex-Marketing Director Lebanon',
+    'Spirit Advertising alumni consultant',
+    'Creative-to-commercial strategist',
+  
+    // Specialized Expertise
+    'Crisis management consultant Lebanon',
+    'Business continuity planning MENA',
+    'Brand resilience advisor',
+    'Marketing team leadership training',
+    'Digital transformation consultant Beirut',
+    'Marketing automation expert Lebanon',
+    'ROI-driven marketing consultant',
+    'Measurable business growth advisor',
+    'Hands-on business consultant Beirut',
+    'Embedded consulting Lebanon',
+    'Sustainable growth strategist MENA',
+  
+    // Client Outcomes & Value Proposition
+    'Actionable business frameworks',
+    'Practical business consultant Lebanon',
+    'Results-driven marketing strategist',
+    'Business consultant with implementation support',
+    'Strategic clarity for Middle East businesses',
   ],
   authors: [{ name: 'Hussein Ali Yassine' }],
   creator: 'Hussein Ali Yassine',
@@ -79,6 +134,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+      <meta name="google-site-verification" content="oL2E3c7bFdT7IwtgkpQoTKtt7FxRqgQvRJslo4PETcs" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
