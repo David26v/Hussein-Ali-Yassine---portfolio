@@ -14,6 +14,7 @@ const HeroSection = () => {
         { id: 1, src: '/images/hussein-headshot.jpeg', alt: 'Hussein Yassine - Business Management Consultant' },
         { id: 2, src: '/images/Ali-Yassine.jpeg', alt: 'Hussein Yassine - Marketing Strategist' },
         { id: 3, src: '/images/picture_8.jpeg', alt: 'Hussein Yassine - Professional Photo' },
+        { id: 4, src: '/images/about/collaborative-approach.png', alt: 'Hussein Yassine - Collaborative Approach' },
     ];
 
   

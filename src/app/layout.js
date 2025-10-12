@@ -27,6 +27,8 @@ export const metadata = {
     'Marketing strategist Hussein Ali Yassine',
     'Beirut business consultant',
     'Lebanon marketing strategist',
+    'Hussein Yassine',
+    
   
     // Core Services
     'Business strategy consultant Lebanon',
