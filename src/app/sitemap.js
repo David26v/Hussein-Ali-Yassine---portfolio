@@ -1,6 +1,6 @@
+import { projectsData } from '@/data/ProjectData';
 import { getAllBlogSlugs } from '@/data/blogData';
 import { mediaItems } from '@/data/mediaData';
-import { projectsData } from '@/data/projectsData';
 
 export default function sitemap() {
   const baseUrl = 'https://husseinali-yassine.com';
