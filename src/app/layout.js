@@ -1,18 +1,20 @@
-import './globals.css'
-import { Inter } from 'next/font/google'
-import Navbar from '@/components/Navbar'
-import Footer from '@/components/Footer'
+import './globals.css';
+import { Inter } from 'next/font/google';
+import Navbar from '@/components/Navbar';
+import Footer from '@/components/Footer';
 
 const inter = Inter({ 
   subsets: ['latin'],
   display: 'swap',
-})
+});
+
+const siteUrl = 'https://www.husseinaliyassine.com';
 
 export const metadata = {
-  metadataBase: new URL('https://www.husseinaliyassine.com'), 
+  metadataBase: new URL(siteUrl),
   title: {
     default: 'Hussein Ali Yassine | Business Management Consultant & Marketing Strategist',
-    template: '%s | Hussein Ali Yassine'
+    template: '%s | Hussein Ali Yassine',
   },
   description: 'Hussein Ali Yassine - Business management consultant and marketing strategist with 12+ years of experience in Lebanon and the MENA region. Specializing in business strategy, brand development, and organizational growth.',
   keywords: [
@@ -94,24 +96,24 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://www.husseinaliyassine.com',
+    url: siteUrl,
     title: 'Hussein Ali Yassine | Business Management Consultant & Marketing Strategist',
     description: 'Business management consultant with 12+ years of experience helping organizations in Lebanon and the MENA region achieve strategic clarity and sustainable growth.',
     siteName: 'Hussein Ali Yassine',
     images: [
       {
-        url: '/collaborative-approach.png',
+        url: '/images/about/collaborative-approach.png',
         width: 1200,
         height: 630,
-        alt: 'Hussein Ali Yassine - Business Management Consultant'
-      }
-    ]
+        alt: 'Hussein Ali Yassine - Business Management Consultant',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Hussein Ali Yassine | Business Management Consultant',
     description: 'Business management consultant and marketing strategist in Lebanon',
-    images: ['/og-image.jpg'],
+    images: ['/images/about/collaborative-approach.png'],
   },
   robots: {
     index: true,
@@ -122,19 +124,22 @@ export const metadata = {
       follow: true,
       'max-video-preview': -1,
       'max-image-preview': 'large',
-      'max-snippet': -1
-    }
+      'max-snippet': -1,
+    },
   },
   alternates: {
-    canonical: 'https://www.husseinaliyassine.com'
-  }
-}
+    canonical: siteUrl,
+  },
+};
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-      <meta name="google-site-verification" content="oL2E3c7bFdT7IwtgkpQoTKtt7FxRqgQvRJslo4PETcs" />
+        {/* Google Site Verification */}
+        <meta name="google-site-verification" content="oL2E3c7bFdT7IwtgkpQoTKtt7FxRqgQvRJslo4PETcs" />
+
+        {/* Schema.org Structured Data */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -143,16 +148,17 @@ export default function RootLayout({ children }) {
               '@type': 'Person',
               name: 'Hussein Ali Yassine',
               alternateName: ['Hussein Yassine', 'Mike Yassine'],
-              url: 'https://www.husseinaliyassine.com',
+              url: siteUrl,
               jobTitle: 'Business Management Consultant & Marketing Strategist',
-              description: 'Business management consultant with over 12 years of experience in Lebanon and the MENA region, specializing in business strategy, brand development, and organizational growth.',
+              description:
+                'Business management consultant with over 12 years of experience in Lebanon and the MENA region, specializing in business strategy, brand development, and organizational growth.',
               workLocation: {
                 '@type': 'Place',
                 address: {
                   '@type': 'PostalAddress',
                   addressLocality: 'Beirut',
-                  addressCountry: 'Lebanon'
-                }
+                  addressCountry: 'Lebanon',
+                },
               },
               knowsAbout: [
                 'Business Management',
@@ -161,28 +167,25 @@ export default function RootLayout({ children }) {
                 'Business Consulting',
                 'Strategic Planning',
                 'MENA Markets',
-                'Organizational Growth'
+                'Organizational Growth',
               ],
               hasOccupation: {
                 '@type': 'Occupation',
                 name: 'Business Management Consultant',
                 occupationLocation: {
                   '@type': 'Country',
-                  name: 'Lebanon'
-                }
+                  name: 'Lebanon',
+                },
               },
               alumniOf: {
                 '@type': 'Organization',
                 name: 'Spirit Advertising',
-                description: 'Former Marketing Director'
+                description: 'Former Marketing Director',
               },
-              sameAs: [
-                'https://www.linkedin.com/in/hussein-ali-yassine'
-              ]
-            })
+              sameAs: ['https://www.linkedin.com/in/hussein-ali-yassine'],
+            }),
           }}
         />
-        {/* Professional Service Schema */}
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -190,32 +193,31 @@ export default function RootLayout({ children }) {
               '@context': 'https://schema.org',
               '@type': 'ProfessionalService',
               name: 'Hussein Ali Yassine Consulting',
-              description: 'Business management and marketing strategy consulting services for organizations in Lebanon and the MENA region',
+              description:
+                'Business management and marketing strategy consulting services for organizations in Lebanon and the MENA region',
               provider: {
                 '@type': 'Person',
-                name: 'Hussein Ali Yassine'
+                name: 'Hussein Ali Yassine',
               },
               areaServed: {
                 '@type': 'Country',
-                name: 'Lebanon'
+                name: 'Lebanon',
               },
               serviceType: [
                 'Business Management Consulting',
                 'Marketing Strategy',
                 'Brand Development',
-                'Business Strategy'
-              ]
-            })
+                'Business Strategy',
+              ],
+            }),
           }}
         />
       </head>
       <body className={inter.className}>
         <Navbar />
-        <main className="min-h-screen">
-          {children}
-        </main>
+        <main className="min-h-screen">{children}</main>
         <Footer />
       </body>
     </html>
-  )
+  );
 }
