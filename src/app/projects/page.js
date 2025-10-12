@@ -1,18 +1,57 @@
 import Card from '@/components/Card'
 
 export const metadata = {
-  title: 'Business Consulting Projects & Marketing Case Studies | Mike Yassine - Hussein Ali Yassine',
-  description: 'Explore business consulting projects and marketing case studies by Mike Yassine (Hussein Ali Yassine). With 12+ years in Beirut Lebanon, former Marketing Director at Spirit Advertising delivering strategic business management solutions, operational excellence, and digital transformation across industries.',
-  keywords: 'Mike Yassine, Hussein Yassine, Hussein Ali Yassine, business consultant Beirut, marketing director Lebanon, Spirit Advertising, business management consultant, strategic planning Lebanon, operational excellence, digital transformation, business development Beirut, marketing strategy Lebanon, consulting services Middle East',
+  title:
+    'Business Consulting Projects & Marketing Case Studies | Mike Yassine (Hussein Ali Yassine) – Beirut, Lebanon',
+  description:
+    'Explore business consulting and marketing case studies by Mike Yassine (Hussein Ali Yassine), a Beirut-based consultant and former Spirit Advertising Marketing Director. Discover real-world examples of business management, marketing leadership, and operational excellence projects across Lebanon and the Middle East.',
+  keywords: [
+    'Mike Yassine',
+    'Hussein Ali Yassine',
+    'Hussein Yassine',
+    'business consultant Beirut',
+    'marketing director Lebanon',
+    'Spirit Advertising',
+    'business strategy consultant',
+    'marketing case studies',
+    'business management consultant',
+    'operational excellence Lebanon',
+    'digital transformation consultant',
+    'Middle East consulting projects',
+    'Beirut marketing strategist',
+  ],
   alternates: {
-    canonical: 'https://husseinali-yassine.com/projects'
+    canonical: 'https://www.husseinaliyassine.com/projects',
   },
   openGraph: {
-    title: 'Business Consulting Projects | Mike Yassine - Hussein Ali Yassine',
-    description: 'Strategic business consulting and marketing expertise from Beirut, Lebanon. 12+ years experience in business management and marketing leadership.',
+    title:
+      'Business Consulting Projects & Marketing Case Studies | Mike Yassine - Hussein Ali Yassine',
+    description:
+      'See how Beirut-based consultant and former Spirit Advertising Marketing Director, Hussein Ali Yassine (Mike Yassine), helped businesses across Lebanon and the Middle East achieve measurable growth through strategic consulting and marketing excellence.',
+    url: 'https://www.husseinaliyassine.com/projects',
+    siteName: 'Hussein Ali Yassine',
+    locale: 'en_US',
     type: 'website',
-  }
-}
+    images: [
+      {
+        url: 'https://www.husseinaliyassine.com/images/projects/og-projects-cover.png',
+        width: 1200,
+        height: 630,
+        alt: 'Business Consulting Projects - Mike Yassine (Hussein Ali Yassine)',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title:
+      'Business Consulting Projects & Marketing Expertise | Mike Yassine - Hussein Ali Yassine',
+    description:
+      'Strategic business and marketing consulting projects by Beirut-based consultant Hussein Ali Yassine. Expertise in business management, marketing strategy, and operational excellence.',
+    images: [
+      'https://www.husseinaliyassine.com/images/projects/og-projects-cover.png',
+    ],
+  },
+};
 
 export default function Projects() {
   const projects = [

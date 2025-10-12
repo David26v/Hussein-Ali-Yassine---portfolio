@@ -49,16 +49,30 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 mt-6">Connect</h4>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="https://www.linkedin.com/in/hussein-ali-yassine" 
-                   target="_blank" 
-                   rel="noopener noreferrer"
-                   className="text-gray-400 hover:text-white transition-colors">
+                <a 
+                  href="https://www.linkedin.com/in/hussein-ali-yassine" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   LinkedIn Profile
                 </a>
               </li>
               <li>
-                <a href="mailto:contact@husseinali-yassine.com" 
-                   className="text-gray-400 hover:text-white transition-colors">
+                <a 
+                  href="https://about.me/husseinaliyassine"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  About.me Profile
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="mailto:contact@husseinali-yassine.com" 
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
                   Email Contact
                 </a>
               </li>

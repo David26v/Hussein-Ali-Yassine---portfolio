@@ -9,13 +9,13 @@ export const metadata = {
   description: 'Strategic insights on business management, marketing, and organizational growth from Mike Yassine (Hussein Ali Yassine). 12+ years experience in Beirut, Lebanon & MENA markets. Former Spirit Advertising Marketing Director sharing proven frameworks for competitive advantage.',
   keywords: 'Mike Yassine blog, Hussein Ali Yassine, Hussein Yassine, business strategy MENA, marketing consulting Lebanon, business management Middle East, Spirit Advertising, competitive advantage, strategic planning Beirut, brand development, MENA markets, business consultant Lebanon',
   alternates: {
-    canonical: 'https://husseinali-yassine.com/blog'
+    canonical: 'https://www.husseinaliyassine.com/blog'
   },
   openGraph: {
     title: 'Mike Yassine | Business Strategy & Marketing Blog - Beirut Lebanon',
     description: 'Expert insights on business strategy, marketing, and growth from 12+ years in Beirut, Lebanon & MENA markets',
     type: 'website',
-    url: 'https://husseinali-yassine.com/blog',
+    url: 'https://www.husseinaliyassine.com/blog',
     siteName: 'Hussein Ali Yassine',
     locale: 'en_US',
   },
@@ -28,9 +28,10 @@ export const metadata = {
     index: true,
     follow: true,
   },
-  authors: [{ name: 'Mike Yassine (Hussein Ali Yassine)', url: 'https://husseinali-yassine.com/about' }],
+  authors: [{ name: 'Mike Yassine (Hussein Ali Yassine)', url: 'https://www.husseinaliyassine.com/about' }],
   category: 'Business & Strategy',
 }
+
 
 function generateBlogSchema(posts) {
   return {

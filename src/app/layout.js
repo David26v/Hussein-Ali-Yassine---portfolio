@@ -9,7 +9,7 @@ const inter = Inter({
 })
 
 export const metadata = {
-  metadataBase: new URL('https://husseinali-yassine.com'), 
+  metadataBase: new URL('https://www.husseinaliyassine.com'), 
   title: {
     default: 'Hussein Ali Yassine | Business Management Consultant & Marketing Strategist',
     template: '%s | Hussein Ali Yassine'
@@ -39,7 +39,7 @@ export const metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://husseinali-yassine.com',
+    url: 'https://www.husseinaliyassine.com',
     title: 'Hussein Ali Yassine | Business Management Consultant & Marketing Strategist',
     description: 'Business management consultant with 12+ years of experience helping organizations in Lebanon and the MENA region achieve strategic clarity and sustainable growth.',
     siteName: 'Hussein Ali Yassine',
@@ -71,7 +71,7 @@ export const metadata = {
     }
   },
   alternates: {
-    canonical: 'https://husseinali-yassine.com'
+    canonical: 'https://www.husseinaliyassine.com'
   }
 }
 
@@ -87,7 +87,7 @@ export default function RootLayout({ children }) {
               '@type': 'Person',
               name: 'Hussein Ali Yassine',
               alternateName: ['Hussein Yassine', 'Mike Yassine'],
-              url: 'https://husseinali-yassine.com',
+              url: 'https://www.husseinaliyassine.com',
               jobTitle: 'Business Management Consultant & Marketing Strategist',
               description: 'Business management consultant with over 12 years of experience in Lebanon and the MENA region, specializing in business strategy, brand development, and organizational growth.',
               workLocation: {

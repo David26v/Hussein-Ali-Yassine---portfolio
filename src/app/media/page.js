@@ -1,7 +1,6 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import { mediaItems, colorClasses } from '@/data/mediaData';
 
-// SEO Metadata (Next.js App Router format)
 export const metadata = {
   title: 'Media & Press | Mike Yassine - Hussein Ali Yassine | Business Consultant Beirut Lebanon',
   description:
@@ -22,13 +21,13 @@ export const metadata = {
     'Middle East consulting expert',
   ],
   alternates: {
-    canonical: 'https://husseinali-yassine.com/media',
+    canonical: 'https://www.husseinaliyassine.com/media',
   },
   openGraph: {
     title: 'Media & Press | Mike Yassine - Hussein Ali Yassine',
     description:
       'Thought leadership in business strategy, marketing excellence, and operational transformation from Beirut, Lebanon. Featured in publications and conferences across the Middle East.',
-    url: 'https://husseinali-yassine.com/media',
+    url: 'https://www.husseinaliyassine.com/media',
     siteName: 'Hussein Ali Yassine',
     locale: 'en_US',
     type: 'website',
@@ -41,148 +40,11 @@ export const metadata = {
   },
 };
 
-const mediaItems = [
-  {
-    id: 1,
-    type: 'Interview',
-    title: 'Navigating Business Growth in Lebanon\'s Challenging Economy',
-    publication: 'Middle East Business Review',
-    date: 'September 2024',
-    description:
-      'Mike Yassine discusses strategies for Lebanese businesses to achieve sustainable growth despite economic volatility, drawing on his 12+ years of experience with Spirit Advertising and business consulting across Beirut and the Middle East region.',
-    link: '#',
-    icon: '🎙️',
-    color: 'blue'
-  },
-  {
-    id: 2,
-    type: 'Keynote',
-    title: 'Marketing Excellence Summit - Beirut 2024',
-    publication: 'Lebanon Marketing Association',
-    date: 'August 2024',
-    description:
-      'Hussein Ali Yassine delivered keynote on "Integrated Marketing Strategies for Middle East Markets," sharing insights from his tenure as Marketing Director at Spirit Advertising and successful regional campaigns across Lebanon and GCC countries.',
-    link: '#',
-    icon: '🎤',
-    color: 'purple'
-  },
-  {
-    id: 3,
-    type: 'Feature Article',
-    title: 'Five Strategies for Market Entry in the GCC Region',
-    publication: 'Arab Business Insights',
-    date: 'July 2024',
-    description:
-      'Hussein Yassine shares actionable frameworks for Lebanese and regional companies expanding into GCC markets, emphasizing competitive positioning, localized branding, and partnership-driven distribution models tailored to Middle Eastern business culture.',
-    link: '#',
-    icon: '📰',
-    color: 'green'
-  },
-  {
-    id: 4,
-    type: 'Podcast',
-    title: 'The MENA Business Podcast – Episode 28',
-    publication: 'Middle East Entrepreneurs Network',
-    date: 'June 2024',
-    description:
-      'In-depth conversation on building resilient business models in Lebanon, operational excellence strategies, and leveraging advertising expertise for business growth—featuring real examples from Spirit Advertising campaigns and consulting projects across Beirut.',
-    link: '#',
-    icon: '🎧',
-    color: 'orange'
-  },
-  {
-    id: 5,
-    type: 'Panel Discussion',
-    title: 'Digital Transformation in Lebanese Businesses',
-    publication: 'Beirut Tech & Business Conference',
-    date: 'May 2024',
-    description:
-      'Mike Yassine joined industry leaders to explore how Lebanese companies can leverage digital marketing, e-commerce, and technology to compete regionally—highlighting practical approaches for businesses navigating Lebanon\'s unique market challenges.',
-    link: '#',
-    icon: '💬',
-    color: 'indigo'
-  },
-  {
-    id: 6,
-    type: 'Expert Commentary',
-    title: 'Crisis Management and Brand Resilience in Emerging Markets',
-    publication: 'Strategic Management Middle East',
-    date: 'April 2024',
-    description:
-      'Analysis of how successful Lebanese brands maintained market position during economic crisis through value repositioning, localized sourcing, and community-centric messaging—practical insights applicable to any business facing market volatility.',
-    link: '#',
-    icon: '💡',
-    color: 'red'
-  },
-  {
-    id: 7,
-    type: 'Workshop',
-    title: 'B2B Sales Excellence for MENA Markets',
-    publication: 'Lebanon Chamber of Commerce',
-    date: 'March 2024',
-    description:
-      'Hussein Ali Yassine led intensive workshop on consultative selling, CRM optimization, and sales enablement strategies specifically designed for Middle East business culture and procurement cycles across Lebanon, Jordan, and GCC markets.',
-    link: '#',
-    icon: '🎯',
-    color: 'teal'
-  },
-  {
-    id: 8,
-    type: 'Video Interview',
-    title: 'Business Leadership in the Middle East: Insights from Beirut',
-    publication: 'Arab Business Network',
-    date: 'February 2024',
-    description:
-      'Provided expert perspective on marketing leadership, operational excellence, and strategic planning for businesses operating across Lebanon and the broader Middle East region, drawing on 12+ years of hands-on experience in Beirut.',
-    link: '#',
-    icon: '📹',
-    color: 'pink'
-  },
-  {
-    id: 9,
-    type: 'Guest Column',
-    title: 'The Evolution of Marketing in Lebanon: From Traditional to Digital',
-    publication: 'Lebanon Business Journal',
-    date: 'January 2024',
-    description:
-      'Mike Yassine explores how Lebanese businesses are adapting marketing strategies for the digital age while maintaining authentic connections with local audiences, featuring lessons from Spirit Advertising campaigns and regional brand success stories.',
-    link: '#',
-    icon: '✍️',
-    color: 'cyan'
-  },
-  {
-    id: 10,
-    type: 'Conference Presentation',
-    title: 'Operational Excellence Through Crisis: Lebanese Case Studies',
-    publication: 'MENA Operations Forum - Dubai',
-    date: 'December 2023',
-    description:
-      'Hussein Yassine presented data-driven frameworks for maintaining operational efficiency during economic disruption, showcasing successful transformations of Lebanese businesses that achieved cost reduction while improving service delivery.',
-    link: '#',
-    icon: '📊',
-    color: 'amber'
-  },
-];
-
-const colorClasses = {
-  blue: 'from-blue-500 to-blue-600',
-  purple: 'from-indigo-500 to-blue-600',
-  green: 'from-green-500 to-emerald-600',
-  orange: 'from-orange-500 to-amber-600',
-  indigo: 'from-blue-500 to-indigo-600',
-  red: 'from-red-500 to-rose-600',
-  teal: 'from-teal-500 to-cyan-600',
-  pink: 'from-rose-500 to-red-600',
-  cyan: 'from-cyan-500 to-blue-600',
-  amber: 'from-amber-500 to-yellow-600',
-};
-
 export default function Media() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
-      {/* Hero Section with Image */}
+      {/* Hero Section */}
       <section className="relative pt-24 pb-16 px-4 overflow-hidden">
-        {/* Background Pattern */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 opacity-95"></div>
         <div className="absolute inset-0" style={{
           backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
@@ -190,8 +52,8 @@ export default function Media() {
         
         <div className="max-w-6xl mx-auto relative z-10">
           <div className="text-center">
-          <nav className="mb-8">
-              <ol className="flex items-center gap-2 text-sm text-blue-200">
+            <nav className="mb-8">
+              <ol className="flex items-center justify-center gap-2 text-sm text-blue-200">
                 <li>
                   <Link href="/" className="hover:text-white transition-colors font-medium">
                     Home
@@ -201,11 +63,6 @@ export default function Media() {
                 <li className="text-white font-medium">Media</li>
               </ol>
             </nav>
-            <div className="flex justify-center mb-8">
-              <div className="relative">
-                <div className="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-500 rounded-full blur-3xl opacity-60"></div>  
-              </div>
-            </div>
 
             <span className="inline-block px-5 py-2 bg-white/20 backdrop-blur-sm text-white rounded-full text-sm font-semibold mb-4 border border-white/30">
               🎯 Thought Leadership & Media Presence
@@ -247,7 +104,7 @@ export default function Media() {
         </div>
       </section>
 
-      {/* Media List - Beautiful Cards */}
+      {/* Media List */}
       <section className="py-16 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-12">
@@ -260,14 +117,13 @@ export default function Media() {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            {mediaItems.map((item, index) => (
+            {mediaItems.map((item) => (
               <article
                 key={item.id}
                 className="group bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-1"
                 itemScope
                 itemType="https://schema.org/NewsArticle"
               >
-                {/* Colored Header */}
                 <div className={`bg-gradient-to-r ${colorClasses[item.color]} p-6 text-white relative overflow-hidden`}>
                   <div className="absolute top-0 right-0 text-8xl opacity-10 transform rotate-12">
                     {item.icon}
@@ -280,7 +136,6 @@ export default function Media() {
                   </h3>
                 </div>
 
-                {/* Content */}
                 <div className="p-6">
                   <div className="flex items-center gap-2 text-sm text-gray-600 mb-4">
                     <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
@@ -299,18 +154,16 @@ export default function Media() {
                     {item.description}
                   </p>
                   
-                  {item.link && (
-                    <Link
-                      href={item.link}
-                      className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 group-hover:gap-3 gap-2 transition-all"
-                      aria-label={`Read more about ${item.title}`}
-                    >
-                      <span>View Full Coverage</span>
-                      <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
-                      </svg>
-                    </Link>
-                  )}
+                  <Link
+                    href={`/media/${item.slug}`}
+                    className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-800 group-hover:gap-3 gap-2 transition-all"
+                    aria-label={`Read more about ${item.title}`}
+                  >
+                    <span>View Full Coverage</span>
+                    <svg className="w-5 h-5 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
+                    </svg>
+                  </Link>
                 </div>
               </article>
             ))}
@@ -318,7 +171,7 @@ export default function Media() {
         </div>
       </section>
 
-      {/* Expertise Topics - Modern Grid */}
+      {/* Expertise Topics */}
       <section className="py-20 px-4 bg-gradient-to-br from-gray-50 to-blue-50">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
@@ -349,7 +202,7 @@ export default function Media() {
         </div>
       </section>
 
-      {/* CTA Section - Beautiful Gradient */}
+      {/* CTA Section */}
       <section className="py-20 px-4 relative overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-indigo-600 to-blue-700"></div>
         <div className="absolute inset-0 opacity-10" style={{
@@ -384,7 +237,7 @@ export default function Media() {
         </div>
       </section>
 
-      {/* SEO Footer Section - Elegant */}
+      {/* SEO Footer Section */}
       <section className="py-16 px-4 bg-gray-900 text-white">
         <div className="max-w-6xl mx-auto">
           <div className="text-center">

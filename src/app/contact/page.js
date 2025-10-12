@@ -20,17 +20,19 @@ export const metadata = {
     'digital transformation consultant Beirut',
   ],
   alternates: {
-    canonical: 'https://husseinali-yassine.com/contact',
+    canonical: 'https://www.husseinaliyassine.com/contact',
   },
   openGraph: {
     title: 'Contact Mike Yassine - Business Consultant | Hussein Ali Yassine',
-    description: 'Get in touch with Hussein Ali Yassine for business consulting, marketing strategy, and operational excellence services across Lebanon and Middle East.',
-    url: 'https://husseinali-yassine.com/contact',
+    description:
+      'Get in touch with Hussein Ali Yassine for business consulting, marketing strategy, and operational excellence services across Lebanon and Middle East.',
+    url: 'https://www.husseinaliyassine.com/contact',
     siteName: 'Hussein Ali Yassine',
     locale: 'en_US',
     type: 'website',
   },
 };
+
 
 const Contact = () => {
   const socialLinks = [

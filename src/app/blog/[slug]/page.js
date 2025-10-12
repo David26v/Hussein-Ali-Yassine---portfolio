@@ -14,8 +14,8 @@ export default function BlogPost() {
   // Social media style interactions
   const [liked, setLiked] = useState(false)
   const [bookmarked, setBookmarked] = useState(false)
-  const [likeCount, setLikeCount] = useState(247) // You can fetch from database
-  const [commentCount, setCommentCount] = useState(18) // You can fetch from database
+  const [likeCount, setLikeCount] = useState(247) 
+  const [commentCount, setCommentCount] = useState(18) 
   const [showComments, setShowComments] = useState(false)
   const [showImageModal, setShowImageModal] = useState(false)
   const [newComment, setNewComment] = useState('')
