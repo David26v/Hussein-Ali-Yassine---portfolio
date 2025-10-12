@@ -39,14 +39,14 @@ function generateBlogSchema(posts) {
     '@type': 'Blog',
     name: 'Mike Yassine Business Strategy Blog',
     description: 'Expert insights on business management, marketing strategy, and organizational growth from Mike Yassine (Hussein Ali Yassine)',
-    url: 'https://husseinali-yassine.com/blog',
+    url: 'https://husseinaliyassine.com/blog',
     author: {
       '@type': 'Person',
       name: 'Hussein Ali Yassine',
       alternateName: ['Mike Yassine', 'Hussein Yassine'],
       jobTitle: 'Business Management Consultant & Marketing Strategist',
       description: '12+ years experience in Beirut, Lebanon and MENA region. Former Marketing Director at Spirit Advertising',
-      url: 'https://husseinali-yassine.com/about',
+      url: 'https:///husseinaliyassine.com/about',
     },
     blogPost: posts.slice(0, 10).map(post => ({
       '@type': 'BlogPosting',
@@ -57,7 +57,7 @@ function generateBlogSchema(posts) {
         '@type': 'Person',
         name: post.author
       },
-      url: `https://husseinali-yassine.com/blog/${post.slug}`
+      url: `https:///husseinaliyassine.com/blog/${post.slug}`
     }))
   }
 }
@@ -79,7 +79,6 @@ export default function Blog() {
 
   return (
     <>
-      {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(blogSchema) }}
@@ -91,7 +90,10 @@ export default function Blog() {
           <div className="absolute inset-0 bg-gradient-to-br from-blue-600 via-indigo-700 to-blue-800 opacity-95"></div>
           <div className="absolute inset-0" style={{
             backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
-          }}></div>
+          }}>
+
+            
+          </div>
 
           <div className="max-w-6xl mx-auto relative z-10">
             {/* Breadcrumb */}

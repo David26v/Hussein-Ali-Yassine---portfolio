@@ -580,3 +580,59 @@ export const projectsData = {
     ],
   },
 }
+
+export const projects = [
+  {
+    id: 1,
+    title: 'Regional Marketing Campaign Strategy - Lebanon & Middle East',
+    category: 'Marketing Strategy & Business Development',
+    description: 'Developed comprehensive integrated marketing campaign for leading Lebanese brand, leveraging Spirit Advertising expertise to increase market share by 45% across Beirut and regional markets through strategic positioning and multi-channel execution.',
+    image: "/images/projects/regional-marketing-campaign-lebanon.png",
+    link: '/projects/regional-marketing-campaign-lebanon'
+  },
+  {
+    id: 2,
+    title: 'Business Management Transformation - Service Industry',
+    category: 'Business Management & Operational Excellence',
+    description: 'Led complete business management restructuring for mid-sized service company in Beirut, implementing new operational frameworks that reduced costs by 28% while improving service delivery and customer satisfaction metrics.',
+    image: "/images/projects/business-management-transformation.png",
+    link: '/projects/business-management-transformation'
+  },
+  {
+    id: 3,
+    title: 'Digital Marketing & Brand Development Initiative',
+    category: 'Digital Strategy & Brand Management',
+    description: 'Designed and executed comprehensive digital marketing strategy for retail brand expansion, utilizing advertising industry best practices from Spirit Advertising experience to achieve 320% increase in online engagement and 180% revenue growth.',
+    image: "/images/projects/digital-marketing-brand-development.png",
+    link: '/projects/digital-marketing-brand-development'
+  },
+
+  {
+    id: 4,
+    title: 'Competitive Advantage & Market Entry Strategy – GCC Expansion',
+    category: 'Business Strategy & Market Expansion',
+    description: 'Defined unique value proposition leveraging Lebanese heritage as a premium differentiator while aligning with GCC consumer preferences and pricing expectations.',
+    image: "/images/projects/gcc-market-entry-strategy.png",
+    link: '/projects/gcc-market-entry-strategy'
+  },
+  {
+    id: 5,
+    title: 'Post-Crisis Brand Revitalization – Navigating Lebanon’s Economic Collapse',
+    category: 'Brand Strategy & Crisis Management',
+    description: 'Mapped economic, operational, and perceptual impacts on brand health, pricing power, and customer loyalty.',
+    image: "/images/projects/post-crisis-brand-revitalization.png",
+    link: '/projects/post-crisis-brand-revitalization'
+  },
+  {
+    id: 6,
+    title: '"B2B Sales Enablement & Revenue Growth Framework',
+    category: 'Sales Strategy & Revenue Operations',
+    description: 'Built standardized yet flexible sales playbook with stages mapped to MENA procurement cycles and relationship dynamics.',
+    image: "/images/projects/b2b-sales-enablement-framework.png",
+    link: '/projects/b2b-sales-enablement-framework'
+  },
+  
+  
+  
+]
+

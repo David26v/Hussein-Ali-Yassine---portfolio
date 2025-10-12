@@ -20,9 +20,7 @@ export const metadata = {
     'Lebanon business expert',
     'Middle East consulting expert',
   ],
-  alternates: {
-    canonical: 'https://www.husseinaliyassine.com/media',
-  },
+  alternates: { canonical: 'https://www.husseinaliyassine.com/media' },
   openGraph: {
     title: 'Media & Press | Mike Yassine - Hussein Ali Yassine',
     description:
@@ -40,8 +38,7 @@ export const metadata = {
   },
 };
 
-export default function Media() {
-  return (
+const Media = () => (
     <div className="min-h-screen bg-gradient-to-br from-gray-50 via-white to-blue-50">
       {/* Hero Section */}
       <section className="relative pt-24 pb-16 px-4 overflow-hidden">
@@ -257,5 +254,6 @@ export default function Media() {
         </div>
       </section>
     </div>
-  );
-}
+);
+
+export default Media;

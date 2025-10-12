@@ -1441,20 +1441,370 @@ export const blogPosts = {
         <p class="mb-4">Leadership is a journey of continuous learning. Stay humble, stay curious, and stay committed to bringing out the best in yourself and others.</p>
       </div>
     `
+  },
+  'vision-to-value-alignment': {
+    title: 'From Vision to Value: Aligning Strategy, Execution, and Culture in MENA Organizations',
+    description: 'Hussein Ali Yassine explores how MENA businesses can close the gap between strategic vision and on-the-ground results through cultural and operational alignment.',
+    date: 'October 12, 2025',
+    readTime: '13 min read',
+    category: 'Strategic Execution',
+    tags: ['Strategy Execution', 'Organizational Alignment', 'Business Culture', 'MENA Markets'],
+    author: 'Hussein Ali Yassine',
+    header_image: '/images/blogs/vision-to-value-header.png',
+    back_ground_image: '/images/blogs/vision-to-value-bg.png',
+    content: `
+      <div class="article-content">
+        <p class="text-lg mb-6"><strong>The Reality Gap:</strong> In countless boardrooms across Beirut, Dubai, and Riyadh, leaders articulate bold visions. Yet too often, those visions never translate into measurable value. Why? Because strategy without alignment is just aspiration.</p>
+        <p class="mb-4">After 12+ years advising organizations in the MENA region, I’ve seen a consistent pattern: the highest-performing companies aren’t necessarily the ones with the most innovative strategies—they’re the ones that align strategy, execution, and culture into a single, coherent system.</p>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">The Alignment Triad</h2>
+        <p class="mb-4">True organizational alignment rests on three interlocking elements:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>Strategic Clarity:</strong> Everyone understands the “what” and “why.”</li>
+          <li><strong>Execution Discipline:</strong> Teams know the “how” and “when.”</li>
+          <li><strong>Cultural Reinforcement:</strong> Behaviors and incentives reward the right actions.</li>
+        </ul>
+        <p class="mb-4">Break one link, and the chain fails.</p>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Why Alignment Fails in MENA Contexts</h2>
+        <p class="mb-4">Cultural and structural factors unique to our region often widen the strategy-execution gap:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Hierarchical decision-making slows responsiveness</li>
+          <li>Family dynamics in family-owned businesses blur accountability</li>
+          <li>Rapid market volatility makes long-term planning feel risky</li>
+          <li>Top-down communication leaves teams disconnected from purpose</li>
+        </ul>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">A Practical Alignment Framework</h2>
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">Step 1: Translate Vision into Strategic Pillars</h3>
+        <p class="mb-4">Avoid vague mission statements. Instead, define 3–5 strategic pillars that answer: “What must we excel at to win?”</p>
+        <p class="mb-4">Example: A regional retailer might choose “Customer Experience,” “Supply Chain Agility,” and “Talent Development” as its non-negotiables.</p>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">Step 2: Cascade Goals with Context</h3>
+        <p class="mb-4">Don’t just delegate KPIs—explain how each team’s work ladders up to the vision.</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Hold “strategy translation” workshops with department heads</li>
+          <li>Use visual strategy maps to show interdependencies</li>
+          <li>Link individual OKRs to strategic pillars</li>
+        </ul>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">Step 3: Align Culture Through Rituals and Recognition</h3>
+        <p class="mb-4">Culture isn’t posters on a wall—it’s what gets rewarded.</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Recognize behaviors that exemplify strategic priorities</li>
+          <li>Share customer stories that illustrate strategic impact</li>
+          <li>Review cultural alignment in leadership meetings</li>
+        </ul>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">The Role of Leadership</h2>
+        <p class="mb-4">Leaders must model alignment daily:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Communicate the “why” behind decisions</li>
+          <li>Protect strategic priorities from distraction</li>
+          <li>Admit missteps openly to reinforce learning</li>
+          <li>Walk the talk—your actions speak louder than town halls</li>
+        </ul>
+  
+        <blockquote class="border-l-4 border-blue-500 bg-blue-50 py-4 px-6 my-6 rounded-r-xl">
+          <p class="text-gray-700 italic">"Strategy executed in isolation fails. Strategy lived by every employee every day creates unstoppable momentum."</p>
+        </blockquote>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Your Next Step</h2>
+        <p class="mb-4">Ask your team this week: “Can you explain in one sentence how your work contributes to our top strategic priority?” If answers vary widely—or don’t exist—it’s time to realign.</p>
+        <p class="mb-4">Alignment isn’t a project. It’s a discipline. And in the complex, fast-moving MENA landscape, it’s your ultimate competitive advantage.</p>
+      </div>
+    `
+  },
+  'performance-culture-beyond-kpis': {
+    title: 'Beyond KPIs: Building a Performance Culture That Drives Growth',
+    description: 'Hussein Yassine reveals how to move past vanity metrics and build a results-oriented culture that balances accountability, learning, and sustainable growth.',
+    date: 'October 12, 2025',
+    readTime: '12 min read',
+    category: 'Performance Management',
+    tags: ['Performance Culture', 'KPIs', 'Team Accountability', 'Growth Mindset'],
+    author: 'Hussein Yassine',
+    header_image: '/images/blogs/performance-culture-header.png',
+    back_ground_image: '/images/blogs/performance-culture-bg.png',
+    content: `
+      <div class="article-content">
+        <p class="text-lg mb-6"><strong>The KPI Trap:</strong> Too many organizations obsess over metrics without asking: “Are we measuring what truly matters?” Dashboards fill with green lights while growth stalls and teams burn out.</p>
+        <p class="mb-4">Having worked with dozens of high-growth and turnaround businesses across the Middle East, I’ve learned that performance isn’t about tracking more numbers—it’s about creating a culture where the right behaviors naturally produce the right results.</p>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">The Three Layers of Performance Culture</h2>
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">1. Purpose-Driven Goals</h3>
+        <p class="mb-4">People perform best when they understand how their work creates value. Replace generic KPIs with “impact statements”:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Instead of “Increase social media followers,” try “Build a community of 10K engaged customers who advocate for our brand.”</li>
+          <li>Instead of “Reduce support tickets,” try “Deliver seamless onboarding so customers succeed on day one.”</li>
+        </ul>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">2. Learning-Oriented Feedback</h3>
+        <p class="mb-4">Shift from “Did you hit your target?” to “What did we learn?”</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Hold monthly “retrospectives,” not just reviews</li>
+          <li>Celebrate intelligent failures that generate insight</li>
+          <li>Ask: “What should we start, stop, or continue?”</li>
+        </ul>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">3. Collective Accountability</h3>
+        <p class="mb-4">Great performance cultures reject siloed goals. Instead, they create shared outcomes:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Marketing + Sales co-own lead-to-revenue conversion</li>
+          <li>Product + Support co-own customer success metrics</li>
+          <li>Finance + Ops co-own cash flow efficiency</li>
+        </ul>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Designing Metrics That Matter</h2>
+        <p class="mb-4">Apply the “SMART-Impact” test to every KPI:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>Strategic:</strong> Does it ladder up to a core priority?</li>
+          <li><strong>Measurable:</strong> Can we track it reliably?</li>
+          <li><strong>Actionable:</strong> Can the team influence it directly?</li>
+          <li><strong>Relevant:</strong> Does it reflect real customer or business value?</li>
+          <li><strong>Timely:</strong> Do we get feedback fast enough to act?</li>
+          <li><strong>Impactful:</strong> If we move this needle, does it change our trajectory?</li>
+        </ul>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Avoiding Common Pitfalls</h2>
+        <p class="mb-4"><strong>Vanity Metrics:</strong> Social likes, website visits, or “activity” without outcome linkage.</p>
+        <p class="mb-4"><strong>Short-Termism:</strong> Hitting quarterly targets at the cost of long-term health (e.g., slashing R&D to boost margins).</p>
+        <p class="mb-4"><strong>Metric Gaming:</strong> When teams optimize for the number, not the intent (e.g., support reps rushing calls to hit “average handle time”).</p>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">The Leader’s Role</h2>
+        <p class="mb-4">Model the behaviors you want to see:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Share your own goals and progress transparently</li>
+          <li>Ask for feedback on your performance</li>
+          <li>Recognize effort and learning, not just outcomes</li>
+          <li>Protect time for reflection and improvement</li>
+        </ul>
+  
+        <blockquote class="border-l-4 border-blue-500 bg-blue-50 py-4 px-6 my-6 rounded-r-xl">
+          <p class="text-gray-700 italic">"Culture eats strategy for breakfast—but performance culture eats stagnation for lunch."</p>
+        </blockquote>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Your Action Plan</h2>
+        <p class="mb-4">This week, audit your team’s KPIs using the SMART-Impact framework. Eliminate any metric that doesn’t pass the test. Replace it with one tied to real value.</p>
+        <p class="mb-4">Then, host a conversation: “How will we know we’re making a difference—not just checking boxes?”</p>
+        <p class="mb-4">Because in the end, performance isn’t about numbers on a screen. It’s about people creating meaningful impact—together.</p>
+      </div>
+    `
+  },
+  'resilience-playbook-mena': {
+    title: 'The Resilience Playbook: How MENA Businesses Thrive Amid Uncertainty',
+    description: 'Mike Yassine shares battle-tested strategies for building organizational resilience in the face of economic, political, and market volatility across the MENA region.',
+    date: 'October 12, 2025',
+    readTime: '11 min read',
+    category: 'Risk & Resilience',
+    tags: ['Resilience', 'Risk Management', 'MENA Markets', 'Business Continuity'],
+    author: 'Mike Yassine',
+    header_image: '/images/blogs/resilience-playbook-header.png',
+    back_ground_image: '/images/blogs/resilience-playbook-bg.png',
+    content: `
+      <div class="article-content">
+        <p class="text-lg mb-6"><strong>The New Normal:</strong> Volatility isn’t an exception in MENA markets—it’s the baseline. From currency fluctuations to regulatory shifts, from supply chain disruptions to sudden demand swings, uncertainty is guaranteed.</p>
+        <p class="mb-4">But here’s the good news: volatility creates opportunity for the prepared. Over my career working with businesses from Lebanon to the GCC, I’ve found that resilient organizations don’t just survive chaos—they leverage it to gain advantage.</p>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">What Is True Resilience?</h2>
+        <p class="mb-4">Resilience isn’t about hunkering down. It’s about adaptive capacity—the ability to sense change, respond quickly, and emerge stronger.</p>
+        <p class="mb-4">It rests on four pillars:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>Financial Flexibility</strong> (cash buffers, diversified revenue)</li>
+          <li><strong>Operational Agility</strong> (modular processes, cross-trained teams)</li>
+          <li><strong>Strategic Foresight</strong> (scenario planning, early-warning systems)</li>
+          <li><strong>Leadership Calm</strong> (decisive, transparent, empathetic)</li>
+        </ul>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">The MENA Resilience Advantage</h2>
+        <p class="mb-4">Operating in complex environments like Lebanon has taught me that MENA businesses often possess innate resilience traits:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Resourcefulness in scarcity</li>
+          <li>Strong relationship networks that enable rapid pivots</li>
+          <li>Cultural adaptability across diverse markets</li>
+          <li>Entrepreneurial grit forged through adversity</li>
+        </ul>
+        <p class="mb-4">The challenge? Systematizing these instincts into repeatable capabilities.</p>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Building Your Resilience Playbook</h2>
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">1. Stress-Test Your Business Model</h3>
+        <p class="mb-4">Run quarterly “what-if” scenarios:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>What if our key supplier disappears?</li>
+          <li>What if local currency devalues by 30%?</li>
+          <li>What if a new competitor enters with 50% lower pricing?</li>
+        </ul>
+        <p class="mb-4">Identify your single points of failure—and build redundancies.</p>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">2. Diversify Intelligently</h3>
+        <p class="mb-4">Not all diversification is equal. Focus on strategic diversification:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Customer segments (not just geographies)</li>
+          <li>Revenue streams (recurring vs. transactional)</li>
+          <li>Supply sources (local + regional options)</li>
+        </ul>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">3. Build a “Rapid Response” Protocol</h3>
+        <p class="mb-4">Pre-define your crisis playbook:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Who decides what in an emergency?</li>
+          <li>What are your communication protocols?</li>
+          <li>What’s your 72-hour action plan?</li>
+        </ul>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">4. Strengthen Your Core Relationships</h3>
+        <p class="mb-4">In MENA, trust is your ultimate insurance policy. Invest in:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Banking and financial partners</li>
+          <li>Key suppliers and distributors</li>
+          <li>Government and regulatory liaisons</li>
+          <li>Loyal customer advocates</li>
+        </ul>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">The Leader’s Role in Crisis</h2>
+        <p class="mb-4">Your team watches you more closely in chaos than in calm. Demonstrate:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>Clarity:</strong> Cut through noise with simple direction</li>
+          <li><strong>Calm:</strong> Regulate your own emotions first</li>
+          <li><strong>Compassion:</strong> Acknowledge human impact</li>
+          <li><strong>Conviction:</strong> Reaffirm your purpose</li>
+        </ul>
+  
+        <blockquote class="border-l-4 border-blue-500 bg-blue-50 py-4 px-6 my-6 rounded-r-xl">
+          <p class="text-gray-700 italic">"Resilience isn’t built in calm seas—it’s forged in storms. But you can prepare the ship before the weather turns."</p>
+        </blockquote>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Final Thought</h2>
+        <p class="mb-4">In MENA, resilience isn’t optional—it’s existential. But it’s also your unfair advantage. While others retreat, you adapt. While others panic, you pivot.</p>
+        <p class="mb-4">Start building your playbook today. The next disruption isn’t a matter of if—it’s when.</p>
+      </div>
+    `
+  },
+  'innovation-paradox-mena': {
+    title: 'The Innovation Paradox: How Traditional MENA Businesses Can Foster Real Innovation Without Losing Their Core',
+    description: 'Hussein Ali Yassine explores how established businesses in the MENA region can balance legacy strengths with forward-looking innovation to stay relevant and competitive.',
+    date: 'October 12, 2025',
+    readTime: '12 min read',
+    category: 'Innovation & Growth',
+    tags: ['Innovation', 'Business Transformation', 'MENA Markets', 'Legacy Business'],
+    author: 'Hussein Ali Yassine',
+    header_image: '/images/blogs/innovation-paradox-header.png',
+    back_ground_image: '/images/blogs/innovation-paradox-bg.png',
+    content: `
+      <div class="article-content">
+        <p class="text-lg mb-6"><strong>The Dilemma:</strong> You’ve built a successful business over decades—trusted brand, loyal customers, proven processes. But now, digital natives are eating your lunch. Customer expectations are shifting. New regulations loom. And your team keeps saying, “We’ve always done it this way.”</p>
+        <p class="mb-4">This is the innovation paradox: how do you evolve without eroding what made you successful in the first place?</p>
+        <p class="mb-4">Having advised family-owned enterprises, regional conglomerates, and legacy brands across Lebanon and the wider MENA region, I’ve seen this tension firsthand. The answer isn’t to abandon your core—it’s to <em>extend</em> it thoughtfully.</p>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Why Innovation Fails in Traditional Businesses</h2>
+        <p class="mb-4">Most innovation efforts in established MENA firms stall because they’re treated as side projects—not strategic imperatives. Common pitfalls include:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>Lip service without investment:</strong> “We support innovation!”—but budgets go to maintaining the status quo.</li>
+          <li><strong>Fear of cannibalization:</strong> Protecting today’s revenue at the cost of tomorrow’s relevance.</li>
+          <li><strong>Cultural inertia:</strong> Hierarchical structures that punish risk-taking and reward conformity.</li>
+          <li><strong>Misaligned incentives:</strong> Teams rewarded for efficiency, not experimentation.</li>
+        </ul>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">The Dual-Engine Model for Sustainable Innovation</h2>
+        <p class="mb-4">The most successful traditional businesses run on two parallel engines:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>Engine 1: Core Optimization</strong> — refining what you already do exceptionally well</li>
+          <li><strong>Engine 2: Future Creation</strong> — exploring new models, technologies, and markets</li>
+        </ul>
+        <p class="mb-4">Neither replaces the other. They fuel each other.</p>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">A Practical Framework for Balanced Innovation</h2>
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">Step 1: Clarify Your Core (Don’t Assume)</h3>
+        <p class="mb-4">Before innovating, define what’s truly sacred:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>What do customers <em>only</em> get from you?</li>
+          <li>What capabilities are truly hard to replicate?</li>
+          <li>What values must never be compromised?</li>
+        </ul>
+        <p class="mb-4">Example: A Beirut-based food manufacturer might realize its core isn’t “packaged goods”—it’s “trusted recipes passed through generations.” That insight opens doors to innovation in e-commerce, experiential retail, or culinary education—without losing authenticity.</p>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">Step 2: Create a Protected Innovation Zone</h3>
+        <p class="mb-4">Innovation can’t thrive in the same environment as core operations. Establish separation:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Dedicated team with different KPIs (e.g., learning velocity vs. quarterly profit)</li>
+          <li>Separate budget with multi-year runway</li>
+          <li>Direct reporting line to leadership (bypassing operational bottlenecks)</li>
+          <li>Permission to fail fast and share lessons</li>
+        </ul>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">Step 3: Start with Adjacent Opportunities</h3>
+        <p class="mb-4">Don’t leap into the unknown. Begin where your core strengths intersect with emerging needs:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>Product Adjacency:</strong> New formats or uses for existing offerings</li>
+          <li><strong>Customer Adjacency:</strong> Serving existing customers in new ways</li>
+          <li><strong>Channel Adjacency:</strong> Reaching customers through digital or hybrid models</li>
+          <li><strong>Geographic Adjacency:</strong> Expanding to culturally similar markets</li>
+        </ul>
+  
+        <h3 class="text-xl font-bold mt-6 mb-3 text-gray-900">Step 4: Embed Customer Co-Creation</h3>
+        <p class="mb-4">In MENA, trust is your innovation accelerator. Involve loyal customers early:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li>Launch private beta groups for new concepts</li>
+          <li>Host “idea dinners” with top clients</li>
+          <li>Use WhatsApp or Instagram communities for real-time feedback</li>
+          <li>Reward advocates who test and refine with you</li>
+        </ul>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Overcoming Cultural Barriers</h2>
+        <p class="mb-4">In many MENA organizations, innovation is stifled not by lack of ideas—but by unspoken norms. Counter them deliberately:</p>
+        <table class="w-full mt-4 mb-6 text-sm">
+          <thead>
+            <tr class="bg-gray-100">
+              <th class="text-left p-2">Cultural Barrier</th>
+              <th class="text-left p-2">Countermeasure</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="border-t">
+              <td class="p-2">“If it’s not broken, don’t fix it.”</td>
+              <td class="p-2">Reframe innovation as “anticipating what’s next” — not fixing, but preparing.</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-2">Fear of public failure</td>
+              <td class="p-2">Celebrate “intelligent failures” in internal forums; share learnings, not just wins.</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-2">Top-down decision-making</td>
+              <td class="p-2">Create “reverse mentoring” programs where junior staff educate leaders on trends.</td>
+            </tr>
+            <tr class="border-t">
+              <td class="p-2">Resistance to external ideas</td>
+              <td class="p-2">Partner with startups, universities, or accelerators to bring fresh perspectives in.</td>
+            </tr>
+          </tbody>
+        </table>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Measuring Innovation That Matters</h2>
+        <p class="mb-4">Forget vanity metrics like “number of ideas submitted.” Track what drives real progress:</p>
+        <ul class="list-disc pl-6 mb-4 space-y-2">
+          <li><strong>Experiment velocity:</strong> How many tests are you running per quarter?</li>
+          <li><strong>Customer validation rate:</strong> % of pilots with strong user adoption</li>
+          <li><strong>Revenue from new offerings:</strong> % of total revenue from innovations launched in last 3 years</li>
+          <li><strong>Employee innovation participation:</strong> % of staff involved in innovation initiatives</li>
+        </ul>
+  
+        <blockquote class="border-l-4 border-blue-500 bg-blue-50 py-4 px-6 my-6 rounded-r-xl">
+          <p class="text-gray-700 italic">"Innovation isn’t about becoming someone else. It’s about becoming more of who you’re meant to be—just faster, smarter, and more relevant."</p>
+        </blockquote>
+  
+        <h2 class="text-2xl font-bold mt-8 mb-4 text-gray-900">Final Thought</h2>
+        <p class="mb-4">Traditional businesses in the MENA region possess immense advantages: deep customer trust, cultural fluency, and operational resilience. The challenge isn’t a lack of potential—it’s the courage to evolve while staying true.</p>
+        <p class="mb-4">Start small. Protect your core. Experiment boldly. And remember: the goal isn’t to become a startup—it’s to become a <em>future-proof</em> enterprise.</p>
+      </div>
+    `
   }
 }
 
-export function getAllBlogSlugs() {
-  return Object.keys(blogPosts)
-}
+export const getAllBlogSlugs = () => Object.keys(blogPosts);
 
-export function getBlogPost(slug) {
-  return blogPosts[slug] || null
-}
+export const getBlogPost = (slug) => blogPosts[slug] ?? null;
 
-export function getAllBlogPosts() {
-  return Object.entries(blogPosts).map(([slug, post]) => ({
+export const getAllBlogPosts = () =>
+  Object.entries(blogPosts).map(([slug, post]) => ({
     slug,
-    ...post
-  }))
-}
+    ...post,
+  }));
