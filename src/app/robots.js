@@ -1,11 +1,13 @@
 export default function robots() {
-    return {
-      rules: {
+  return {
+    rules: [
+      {
         userAgent: '*',
         allow: '/',
-        disallow: '/private/',
+        disallow: ['/private/', '/api/', '/admin/'],
       },
-      sitemap: 'https://husseinali-yassine.com/sitemap.xml',
-    };
-  }
-  
+    ],
+    sitemap: 'https://www.husseinaliyassine.com/sitemap.xml',
+    host: 'https://www.husseinaliyassine.com',
+  };
+}
