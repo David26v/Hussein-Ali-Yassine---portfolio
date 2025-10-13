@@ -1,40 +1,69 @@
+'use client';
+
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export const metadata = {
-  title: 'Contact Mike Yassine | Business Consultant Beirut Lebanon | Hussein Ali Yassine',
-  description:
-    'Contact Mike Yassine (Hussein Ali Yassine) for business consulting, marketing strategy, and operational excellence services in Beirut, Lebanon and Middle East. Former Spirit Advertising Marketing Director with 12+ years expertise. Schedule a consultation today.',
-  keywords: [
-    'contact Mike Yassine',
-    'Hussein Ali Yassine contact',
-    'Hussein Yassine Beirut',
-    'business consultant Beirut contact',
-    'marketing director Lebanon',
-    'Spirit Advertising consultant',
-    'business strategy Lebanon',
-    'operational excellence consultant Middle East',
-    'marketing consultant Beirut',
-    'business consulting services Lebanon',
-    'strategic planning advisor Middle East',
-    'digital transformation consultant Beirut',
-  ],
-  alternates: {
-    canonical: 'https://www.husseinaliyassine.com/contact',
-  },
-  openGraph: {
-    title: 'Contact Mike Yassine - Business Consultant | Hussein Ali Yassine',
-    description:
-      'Get in touch with Hussein Ali Yassine for business consulting, marketing strategy, and operational excellence services across Lebanon and Middle East.',
-    url: 'https://www.husseinaliyassine.com/contact',
-    siteName: 'Hussein Ali Yassine',
-    locale: 'en_US',
-    type: 'website',
-  },
-};
-
-
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    company: '',
+    subject: '',
+    message: '',
+  });
+  const [status, setStatus] = useState({ type: '', message: '' });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setStatus({ type: '', message: '' });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (response.ok) {
+        setStatus({
+          type: 'success',
+          message: 'Thank you! Your consultation request has been sent successfully. We will get back to you within 1-2 business days.',
+        });
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          subject: '',
+          message: '',
+        });
+      } else {
+        setStatus({
+          type: 'error',
+          message: data.error || 'Something went wrong. Please try again.',
+        });
+      }
+    } catch (error) {
+      setStatus({
+        type: 'error',
+        message: 'Failed to send message. Please try again later.',
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   const socialLinks = [
     {
       name: 'LinkedIn',
@@ -90,7 +119,21 @@ const Contact = () => {
               <p className="text-gray-600 mb-6 text-center">
                 Get expert guidance on business strategy, marketing excellence, and operational transformation in Lebanon and the Middle East.
               </p>
-              <form className="space-y-6">
+
+              {/* Status Messages */}
+              {status.message && (
+                <div
+                  className={`mb-6 p-4 rounded-xl ${
+                    status.type === 'success'
+                      ? 'bg-green-50 border border-green-200 text-green-800'
+                      : 'bg-red-50 border border-red-200 text-red-800'
+                  }`}
+                >
+                  {status.message}
+                </div>
+              )}
+
+              <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-semibold text-gray-800 mb-2">
                     Full Name *
@@ -100,6 +143,8 @@ const Contact = () => {
                     id="name"
                     name="name"
                     required
+                    value={formData.name}
+                    onChange={handleChange}
                     className="w-full px-5 py-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                     placeholder="Your Name"
                   />
@@ -114,6 +159,8 @@ const Contact = () => {
                     id="email"
                     name="email"
                     required
+                    value={formData.email}
+                    onChange={handleChange}
                     className="w-full px-5 py-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                     placeholder="your.email@company.com"
                   />
@@ -128,6 +175,8 @@ const Contact = () => {
                     id="company"
                     name="company"
                     required
+                    value={formData.company}
+                    onChange={handleChange}
                     className="w-full px-5 py-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                     placeholder="Your Company Name"
                   />
@@ -141,6 +190,8 @@ const Contact = () => {
                     id="subject"
                     name="subject"
                     required
+                    value={formData.subject}
+                    onChange={handleChange}
                     className="w-full px-5 py-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                   >
                     <option value="">Select a service</option>
@@ -165,6 +216,8 @@ const Contact = () => {
                     name="message"
                     rows="5"
                     required
+                    value={formData.message}
+                    onChange={handleChange}
                     className="w-full px-5 py-3.5 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition"
                     placeholder="Tell us about your business challenges, goals, or project requirements..."
                   ></textarea>
@@ -172,9 +225,12 @@ const Contact = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50"
+                  disabled={isSubmitting}
+                  className={`w-full bg-gradient-to-r from-blue-600 to-indigo-700 text-white px-6 py-4 rounded-xl font-semibold hover:from-blue-700 hover:to-indigo-800 transition-all duration-300 shadow-md hover:shadow-lg transform hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 ${
+                    isSubmitting ? 'opacity-70 cursor-not-allowed' : ''
+                  }`}
                 >
-                  Send Consultation Request
+                  {isSubmitting ? 'Sending...' : 'Send Consultation Request'}
                 </button>
               </form>
             </div>
@@ -191,10 +247,10 @@ const Contact = () => {
                   <div>
                     <h3 className="font-semibold text-gray-900 mb-1">Email</h3>
                     <a
-                      href="mailto:contact@husseinali-yassine.com"
+                      href="mailto:mike@husseinaliyassine.com"
                       className="text-blue-600 hover:text-blue-800 font-medium transition-colors"
                     >
-                      contact@husseinali-yassine.com
+                      mike@husseinaliyassine.com
                     </a>
                   </div>
                   <div>

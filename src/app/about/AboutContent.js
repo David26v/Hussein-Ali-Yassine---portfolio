@@ -88,9 +88,14 @@ const AboutContent = () => {
           <p className="text-xl text-emerald-100 max-w-3xl mx-auto mb-2">
             <strong className="text-white">Hussein Ali Yassine</strong>
           </p>
-          <p className="text-lg text-teal-200 max-w-3xl mx-auto">
+          <p className="text-lg text-teal-200 max-w-3xl mx-auto mb-4">
             Business Consultant | Marketing Strategist | Former Spirit Advertising Marketing Director
           </p>
+          <div className="flex flex-wrap justify-center gap-2 max-w-2xl mx-auto">
+            <span className="px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-sm text-white border border-white/20">
+              🌐 Multilingual: Arabic • English • French • Spanish • Nouchi
+            </span>
+          </div>
         </div>
       </div>
     </section>
@@ -134,8 +139,9 @@ const AboutContent = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Professional Background</h2>
               <p className="text-gray-700 leading-relaxed mb-4 text-lg">
                 <strong>Mike Yassine (Hussein Ali Yassine)</strong> is a seasoned business management consultant with over 12 years of experience 
-                operating in the dynamic markets of <strong>Beirut, Lebanon</strong> and the broader MENA region. His career has been 
-                defined by a commitment to strategic thinking, operational excellence, and driving measurable business outcomes.
+                operating in the dynamic markets of <strong>Beirut, Lebanon</strong> and the broader MENA region. Fluent in <strong>Arabic, English, French, Spanish, and Nouchi</strong>, 
+                his multilingual capabilities enable him to navigate diverse business environments and connect with stakeholders across multiple markets. 
+                His career has been defined by a commitment to strategic thinking, operational excellence, and driving measurable business outcomes.
               </p>
               <p className="text-gray-700 leading-relaxed text-lg">
                 Previously serving as <strong className="text-blue-600">Marketing Director at Spirit Advertising</strong>, Hussein developed deep expertise 
@@ -247,7 +253,7 @@ const AboutContent = () => {
               {
                 icon: '🌍',
                 title: 'MENA Market Expertise',
-                desc: 'Deep understanding of Lebanese and regional market dynamics, cultural nuances, business practices, and GCC market entry strategies.',
+                desc: 'Deep understanding of Lebanese and regional market dynamics, cultural nuances, and business practices. Fluent in Arabic, English, French, Spanish, and Nouchi for seamless cross-market communication.',
                 color: 'orange'
               },
               {

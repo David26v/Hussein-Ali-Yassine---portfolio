@@ -70,10 +70,18 @@ export default function Footer() {
               </li>
               <li>
                 <a 
-                  href="mailto:contact@husseinali-yassine.com" 
+                  href="mailto:mike@husseinaliyassine.com" 
                   className="text-gray-400 hover:text-white transition-colors"
                 >
                   Email Contact
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="https://www.instagram.com/themikeyassine/" 
+                  className="text-gray-400 hover:text-white transition-colors"
+                >
+                  instagram Profile
                 </a>
               </li>
             </ul>

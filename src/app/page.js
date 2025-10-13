@@ -159,22 +159,26 @@ const achievements = [
   {
     year: '2023',
     title: 'Led Digital Transformation Initiative',
-    description: 'Successfully guided 5 major Lebanese companies through complete digital transformation, resulting in average 150% increase in online revenue streams.',
+    description:
+      'Successfully guided 5 major Lebanese companies through complete digital transformation, resulting in an average 150% increase in online revenue streams.',
   },
   {
     year: '2022',
     title: 'Regional Marketing Excellence',
-    description: 'Developed award-winning marketing campaigns that achieved 45% market share growth for leading MENA brands across multiple categories.',
+    description:
+      'Developed award-winning marketing campaigns that achieved 45% market share growth for leading MENA brands across multiple categories.',
   },
   {
     year: '2021',
     title: 'Business Resilience Strategy',
-    description: 'Helped 12 Lebanese businesses navigate economic challenges through strategic pivots, cost optimization, and new revenue channel development.',
+    description:
+      'Helped 12 Lebanese businesses navigate economic challenges through strategic pivots, cost optimization, and new revenue channel development.',
   },
   {
     year: '2020',
     title: 'E-Commerce Leadership',
-    description: 'Pioneered e-commerce strategies for traditional Lebanese retailers, generating over $5M in cumulative online sales during market transition.',
+    description:
+      'Pioneered e-commerce strategies for traditional Lebanese retailers, generating over $5M in cumulative online sales during market transition.',
   },
 ];
 
