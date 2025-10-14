@@ -1,4 +1,3 @@
-// data/blogData.js
 
 export const blogPosts = {
   'building-sustainable-market-advantages': {

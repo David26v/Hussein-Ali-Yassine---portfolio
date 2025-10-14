@@ -1,5 +1,3 @@
-// File: /app/blog/page.js
-
 import { getAllBlogPosts } from '@/data/blogData'
 import Image from 'next/image'
 import Link from 'next/link'

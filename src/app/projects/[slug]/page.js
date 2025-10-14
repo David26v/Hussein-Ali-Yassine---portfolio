@@ -21,8 +21,18 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title: project.title,
       description: project.challenge.substring(0, 155),
-      images: [project.image],
-    }
+      url: `https://www.husseinaliyassine.com/projects/${params.slug}`,
+      siteName: 'Mike Yassine | Business Consultant & Marketing Strategist',
+      images: [
+        {
+          url: `https://www.husseinaliyassine.com${project.image}`,
+          width: 1200,
+          height: 630,
+          alt: project.title,
+        },
+      ],
+      type: 'article',
+    },
   }
 }
 
